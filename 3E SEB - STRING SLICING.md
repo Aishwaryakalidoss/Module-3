@@ -23,8 +23,22 @@ To write a Python function that accepts a string and forms a new string by rever
 ### PROGRAM
 
 ```
+# Reg.No- 212222060008
+# Name- AISHWARYA K
+t = eval(input())
+print("Initially the tuple is :", t)
+d = {}
+for item in t:
+    if item[0] in d:
+        d[item[0]] += item[1:]
+    else:
+        d[item[0]] = list(item)
+result = tuple(tuple(v) for v in d.values())
+print("Joined tuple :", result)
 ```
 
 ### OUTPUT
+<img width="1340" height="157" alt="image" src="https://github.com/user-attachments/assets/f17d4b9e-e036-43e3-a24b-a5c4a487f378" />
 
 ### RESULT
+Thus, the Python program to join tuples with similar initial elements has been successfully executed and the output is verified.
